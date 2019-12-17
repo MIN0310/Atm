@@ -21,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
         String username = edUsername.getText().toString();
         String password = edPassword.getText().toString();
         if ("Jasmine".equals(username) && "0000".equals(password)) {
+            setResult(RESULT_OK);
             finish();
         }else {
             new AlertDialog.Builder(this)

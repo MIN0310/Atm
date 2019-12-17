@@ -30,7 +30,7 @@ public class PokerCard extends ConstraintLayout {
         return value;
     }
 
-    public void getValue(int value) {
+    public void setValue(int value) {
         this.value = value;
         int type = value / 13;
         int point = (value % 13) + 1;
